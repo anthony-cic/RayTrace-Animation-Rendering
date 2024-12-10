@@ -169,6 +169,7 @@ class Scene:
             self.object_keyframes = 0
             self.light_keyframes = 0
             self.material_keyframes = 0
+            self.total_frames = 0
             print("No Animation found for this scene")
 
     def update_scene_for_frame(self, frame: int):

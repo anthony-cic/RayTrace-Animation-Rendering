@@ -17,9 +17,14 @@ def main():
     scene = Scene(args.ray_path)
     
     scene_name = args.ray_path.split('/')[-1].split('.')[0] # You may need to change this
+    print(scene_name)
     renderer = Renderer(args.width, args.height, save_progress=args.save_progress, save_progress_path=f"progress_imgs_{scene_name}", save_every_N=50)
 
-    total_frames = scene.total_frames if scene.total_frames > 0 else 30  # default to 30 frames if not specified
+    total_frames = scene.total_frames #if scene.total_frames > 0 else 90  # default to 30 frames if not specified
+    total_frames = 90
+    if total_frames == 0:
+        final_image = renderer.render(scene)
+
     print(f"total frames: {total_frames}")
     for frame in range(total_frames):
         scene.update_scene_for_frame(frame)
