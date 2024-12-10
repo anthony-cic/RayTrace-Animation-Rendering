@@ -1,0 +1,68 @@
+{
+    "author": "Keaton",
+    "background": {
+        "color": [0.05, 0.05, 0.05],
+        "ambientLight": [0.2, 0.2, 0.2]
+    },
+    "camera": {
+        "eye": [0.0, 5.0, 3.0],
+        "lookAt": [1.5, 0.0, 1.0],
+        "up": [0.0, 0.0, 1.0],
+        "fovy": 45.0
+    },
+    "lights": [
+        {
+            "position": [0.0, 5.0, 10.0],
+            "color": [1.0, 1.0, 1.0]
+        }
+    ],
+    "materials": [
+        {
+            "textureFilename": null,
+            "diffuseColor": [0.0, 0.0, 1.0],
+            "specularColor": [1.0, 1.0, 1.0],
+            "reflectiveColor": [0.8, 0.8, 0.8],
+            "transparentColor": [0.0, 0.0, 0.0],
+            "shininess": 100,
+            "indexOfRefraction": 1.0
+        },
+        {
+            "textureFilename": null,
+            "diffuseColor": [0.8, 0.2, 0.2],
+            "specularColor": [0.0, 0.0, 0.0],
+            "reflectiveColor": [0.0, 0.0, 0.0],
+            "transparentColor": [0.0, 0.0, 0.0],
+            "shininess": 10,
+            "indexOfRefraction": 1.0
+        }
+    ],
+    "objects": {
+        "spheres": [
+            {
+                "materialIndex": 0,
+                "center": [0.0, -1.0, 1.5],
+                "radius": 1.0
+            },
+            {
+                "materialIndex": 0,
+                "center": [3.0, -1.0, 1.5],
+                "radius": 1.0
+            }
+        ],
+        "triangles": [
+            {
+                "materialIndex": 1,
+                "vertices": [
+                    [0.0, -3.0, 0.0],
+                    [6.0, -3.0, 0.0],
+                    [3.0, 3.0, 0.0]
+                ],
+                "textureCoords": [
+                    [0.0, 0.0],
+                    [1.0, 0.0],
+                    [0.5, 1.0]
+                ]
+            }
+        ]
+    }
+}

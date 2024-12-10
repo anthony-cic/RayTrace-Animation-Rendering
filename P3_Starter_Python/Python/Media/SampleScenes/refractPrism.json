@@ -1,0 +1,39 @@
+{
+    "author": "Keaton",
+    "background": {
+        "color": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "ambientLight": [
+            0.2,
+            0.2,
+            0.2
+        ]
+    },
+    "camera": {
+        "eye": [
+            20.0,
+            0.0,
+            -2.0
+        ],
+        "lookAt": [
+            10.0,
+            0.0,
+            -2.0
+        ],
+        "up": [
+            0.0,
+            0.0,
+            1.0
+        ],
+        "fovy": 45.0
+    },
+    "lights": [],
+    "materials": [],
+    "objects": {
+        "spheres": [],
+        "triangles": []
+    }
+}

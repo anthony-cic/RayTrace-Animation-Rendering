@@ -1,0 +1,105 @@
+{
+    "author": "Keaton",
+    "background": {
+        "color": [
+            0.15,
+            0.15,
+            0.25
+        ],
+        "ambientLight": [
+            1.0,
+            1.0,
+            1.0
+        ]
+    },
+    "camera": {
+        "eye": [
+            0.0,
+            4.0,
+            0.0
+        ],
+        "lookAt": [
+            10.0,
+            0.0,
+            0.0
+        ],
+        "up": [
+            0.0,
+            0.0,
+            1.0
+        ],
+        "fovy": 90.0
+    },
+    "lights": [
+        {
+            "position": [0.0, 10.0, 10.0],
+            "color": [1.0, 1.0, 1.0]
+        }
+    ],
+    "materials": [
+        {
+            "textureFilename": null,
+            "diffuseColor": [0.5, 0.0, 0.0],  
+            "specularColor": [0.3, 0.3, 0.3],
+            "reflectiveColor": [0.3, 0.3, 0.3],
+            "transparentColor": [0.0, 0.0, 0.0],
+            "shininess": 50,
+            "indexOfRefraction": 0.6
+        },
+        {
+            "textureFilename": null,
+            "diffuseColor": [0.5, 0.5, 0.5],  
+            "specularColor": [0.3, 0.3, 0.3],
+            "reflectiveColor": [0.5, 0.5, 0.5],
+            "transparentColor": [0.0, 0.0, 0.0],
+            "shininess": 50,
+            "indexOfRefraction": 0.6
+        },
+        {
+            "textureFilename": null,
+            "diffuseColor": [0.0, 0.0, 0.5], 
+            "specularColor": [0.3, 0.3, 0.3],
+            "reflectiveColor": [0.3, 0.3, 0.3],
+            "transparentColor": [0.0, 0.0, 0.0],
+            "shininess": 50,
+            "indexOfRefraction": 0.6
+        }
+    ],
+    "objects": {
+        "spheres": [
+            {
+                "materialIndex": 0,
+                "center": [10.0, 3.0, 0.0],
+                "radius": 2.0
+            }
+        ],
+        "triangles": [
+            {
+                "materialIndex": 1,
+                "vertices": [
+                    [0.0, -5.0, -5.0],   
+                    [0.0, -5.0, 5.0],   
+                    [15.0, -1.0, -5.0]  
+                ],
+                "textureCoords": [
+                    [1.0, 0.0],
+                    [0.0, 0.0],
+                    [0.0, 1.0]
+                ]
+            },
+            {
+                "materialIndex": 1,
+                "vertices": [
+                    [15.0, -1.0, -5.0], 
+                    [0.0, -5.0, 5.0],    
+                    [15.0, -1.0, 5.0]   
+                ],
+                "textureCoords": [
+                    [1.0, 0.0],
+                    [0.0, 0.0],
+                    [0.0, 1.0]
+                ]
+            }
+        ]
+    }
+}

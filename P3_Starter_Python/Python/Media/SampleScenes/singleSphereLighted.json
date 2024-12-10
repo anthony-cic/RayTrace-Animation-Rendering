@@ -1,0 +1,83 @@
+{
+    "author": "Keaton",
+    "background": {
+        "color": [
+            0.15,
+            0.15,
+            0.25
+        ],
+        "ambientLight": [
+            1.0,
+            1.0,
+            1.0
+        ]
+    },
+    "camera": {
+        "eye": [
+            0.0,
+            4.0,
+            0.0
+        ],
+        "lookAt": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "up": [
+            0.0,
+            0.0,
+            1.0
+        ],
+        "fovy": 90.0
+    },
+    "lights": [
+        {
+            "position": [5.0, 5.0, 5.0],
+            "color": [1.0, 1.0, 1.0]
+        }
+    ],
+    "materials": [
+
+        {
+            "textureFilename": null,
+            "diffuseColor": [1.0, 0.0, 0.0],
+            "specularColor": [1.0, 1.0, 1.0],
+            "reflectiveColor": [0.0, 0.0, 0.0],
+            "transparentColor": [0.0, 0.0, 0.0],
+            "shininess": 10,
+            "indexOfRefraction": 1.0
+          }
+
+
+    ],
+    "objects": {
+        "spheres": [
+
+            {
+                "materialIndex": 0,
+                "center": [0.0, 0.0, 0.0],
+                "radius": 1.0
+            }
+        ],
+        "triangles": []
+    },
+    "animations": {
+        "frames": 30,
+        "objectAnimations": [
+          {
+            "target": "sphere",
+            "index": 0,
+            "keyframes": [
+              {
+                "frame": 0,
+                "center": [0.0, 0.0, 0.0]
+              },
+              {
+                "frame": 30,
+                "center": [0.0, 2.0, 0.0]
+              }
+            ]
+          }
+        ]
+      }
+}
